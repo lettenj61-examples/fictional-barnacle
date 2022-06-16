@@ -1,1 +1,15 @@
 name: Source change detection
+on:
+  pull_request:
+    branches:
+      - 'main'
+    paths:
+      - 'source/**'
+jobs:
+  'Source change test':
+    name: Source change test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Simple output
+        run: echo 'We are doing test!'
