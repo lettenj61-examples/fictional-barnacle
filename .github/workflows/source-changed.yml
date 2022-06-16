@@ -6,7 +6,7 @@ on:
     paths:
       - 'source/**'
 jobs:
-  'Source change test':
+  source-changed:
     name: Source change test
     runs-on: ubuntu-latest
     steps:
