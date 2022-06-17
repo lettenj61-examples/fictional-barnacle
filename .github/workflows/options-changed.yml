@@ -1,0 +1,15 @@
+name: Options change detection
+on:
+  push:
+    paths:
+      - 'options/**'
+jobs:
+  test-options-directory:
+    name: Test options directory
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm run test

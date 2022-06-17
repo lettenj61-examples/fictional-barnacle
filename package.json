@@ -1,0 +1,16 @@
+{
+  "name": "@lettenj61-examples/hello-actions",
+  "version": "0.2.0",
+  "description": "My attempts to learn GitHub Actions",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Hideyuki Ueno (lettenj61)",
+    "email": "letitscalable+git@gmail.com",
+    "url": "https://github.com/lettenj61"
+  },
+  "license": "CC-BY-4.0"
+}
