@@ -9,6 +9,7 @@ jobs:
   source-changed:
     name: Source change test
     runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.pull_request.title, '[skip ci]') }}
     steps:
       - uses: actions/checkout@v3
       - name: Simple output
