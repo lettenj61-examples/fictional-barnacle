@@ -8,5 +8,8 @@
     "test": "echo 'test in feature YYY'"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "volta": {
+    "node": "18.15.0"
+  }
 }
