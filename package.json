@@ -12,5 +12,9 @@
     "email": "letitscalable+git@gmail.com",
     "url": "https://github.com/lettenj61"
   },
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "workspaces": [
+    "packages/feature-xxx",
+    "packages/feature-yyy"
+  ]
 }

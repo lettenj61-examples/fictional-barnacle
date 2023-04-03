@@ -1,0 +1,12 @@
+{
+  "name": "feature-yyy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo 'test in feature YYY'"
+  },
+  "author": "",
+  "license": "ISC"
+}

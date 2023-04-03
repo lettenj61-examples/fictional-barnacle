@@ -1,0 +1,22 @@
+name: Test for feature XXX
+on:
+  push:
+    paths:
+      - 'packages/feature-xxx/**' # only trigger job when files under /feature-xxx are modified
+
+jobs:
+  feature-xxx-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Switch to feature-xxx directory
+        run: cd packages/feature-xxx
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests and verify
+        run: |
+          npm run test
+          npm run format
