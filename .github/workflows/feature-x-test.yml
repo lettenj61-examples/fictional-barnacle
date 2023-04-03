@@ -9,14 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: Switch to feature-xxx directory
-        run: cd packages/feature-xxx
-
       - name: Install dependencies
         run: npm install
+        working-directory: packages/feature-xxx
 
       - name: Run tests and verify
         run: |
           npm run test
           npm run format
+        working-directory: packages/feature-xxx
