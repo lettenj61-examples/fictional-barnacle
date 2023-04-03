@@ -1,0 +1,19 @@
+name: Test for feature YYY
+on:
+  push:
+    paths:
+      - 'packages/feature-yyy/**'
+
+jobs:
+  feature-xxx-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+        working-directory: packages/feature-yyy
+
+      - name: Run YYY tests
+        run: |
+          npm run test
+        working-directory: packages/feature-yyy
